@@ -13,7 +13,7 @@ jQuery.fn.putCursorAtEnd = function() {
       		$(this).val($(this).val());
     	}
 	});
-};
+};    
 
 $( () => {
 

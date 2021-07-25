@@ -316,6 +316,24 @@ body {
   z-index: 2;
   color: white;
   font-family: "PT Sans";
+  overflow: hidden;
+}
+
+.linkYouTube:hover .icon__main,
+.linkYouTube:active .icon__main,
+.linkYouTube:focus .icon__main {
+  fill: #cd201f;
+}
+.linkInstagram:hover .icon__main,
+.linkInstagram:active .icon__main,
+.linkInstagram:focus .icon__main {
+  fill: #DD2A7B;
+  
+}
+.linkVK:hover .icon__main,
+.linkVK:active .icon__main,
+.linkVK:focus .icon__main {
+  fill: #4D76A4;
 }
 
 
@@ -675,7 +693,7 @@ body {
   }
 }
 
-  #stars {
+#stars {
   width: 1px;
   height: 1px;
   background: transparent;
