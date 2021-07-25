@@ -1,5 +1,5 @@
 const gearIcon = new Vivus(
-    'gears',
+    'logo',
     {
         type: 'oneByOne',
         duration: 700
