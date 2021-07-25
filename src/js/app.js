@@ -1,7 +1,7 @@
 const gearIcon = new Vivus(
     'logo',
     {
-        type: 'oneByOne',
-        duration: 700
+        type: 'scenario',
+        duration: 1000
     }
 );

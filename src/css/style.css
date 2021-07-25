@@ -281,6 +281,7 @@ body {
 	align-items: center;
   opacity: 0.8;
   padding: 20px;
+  font-family: 'Open Sans', sans-serif !important;
 }
 .parallelogram1Click, 
 .parallelogram2Click,
