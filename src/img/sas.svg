@@ -1,0 +1,12 @@
+<svg width="973" height="356" viewBox="0 0 973 356" fill="none" xmlns="http://www.w3.org/2000/svg">
+<!--Нижняя верхняя-->
+<line x1="902.491" y1="230.059" x2="968.994" y2="219.332" stroke="#A2A2A2" stroke-width="8" stroke-linecap="round"/>
+<!--Нижняя нижняя-->
+<line x1="929.801" y1="274.476" x2="968.849" y2="220.939" stroke="#A2A2A2" stroke-width="8" stroke-linecap="round"/>
+<!--Верхняя нижняя-->
+<line x1="70.2575" y1="119.994" x2="4.65967" y2="135.311" stroke="#A2A2A2" stroke-width="8" stroke-linecap="round"/>
+<!--Верхняя верхняя-->
+<line x1="39.9304" y1="77.5796" x2="4.69317" y2="133.698" stroke="#A2A2A2" stroke-width="8" stroke-linecap="round"/>
+<path d="M350.816 351.532C797.01 354.728 804.051 318.299 966.178 223.565M622.541 4.59711C176.347 1.40112 169.306 37.8302 7.17874 132.565" stroke="#A2A2A2" stroke-width="8"/>
+</svg>
+
