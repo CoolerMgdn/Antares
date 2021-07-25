@@ -692,6 +692,9 @@ body {
     width: 90%;
     padding: 0 15px;
   }
+  .parallax_body_logo {
+    padding-top: 0px;
+  }
 }
 
 #stars {
