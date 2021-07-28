@@ -1,0 +1,6 @@
+<svg width="276" height="365" viewBox="0 0 276 365" fill="none" xmlns="http://www.w3.org/2000/svg">
+<pattern id="pattern" width="100%" height="100%">
+        <image href="photo1.jpg" width="100%" height="100%" preserveAspectRatio="xMidYMin slice"></image>
+</pattern>
+<path d="M3.82 362.854C21.7848 262.663 -36.5638 -9.78019 271.999 2.50875C254.034 102.699 312.383 375.143 3.82 362.854Z" stroke="black" stroke-width="3" fill="url(#pattern)"/>
+</svg>

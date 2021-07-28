@@ -1,6 +1,6 @@
-<svg width="221" height="203" viewBox="0 0 221 203" fill="none" xmlns="http://www.w3.org/2000/svg">
-<path d="M175.864 7.60699L215.549 5.7503" stroke="black" stroke-width="10" stroke-linecap="round"/>
-<path d="M189.372 34.8171L215.74 5.36691" stroke="black" stroke-width="10" stroke-linecap="round"/>
+<svg width="222" height="203" viewBox="0 0 222 203" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M178 7.60699L217.685 5.7503" stroke="black" stroke-width="5" stroke-linecap="round"/>
+<path d="M191.508 34.8171L217.876 5.36691" stroke="black" stroke-width="5" stroke-linecap="round"/>
 <mask id="path-3-inside-1" fill="white">
 <rect x="27.1899" y="125.128" width="47.1333" height="77.8725" rx="5"/>
 </mask>
@@ -13,5 +13,5 @@
 <rect x="98.9146" y="94.3873" width="47.1333" height="108.612" rx="5"/>
 </mask>
 <rect x="98.9146" y="94.3873" width="47.1333" height="108.612" rx="5" stroke="#FFD600" stroke-width="12" mask="url(#path-5-inside-3)"/>
-<line x1="217.288" y1="8.08518" x2="2.31103" y2="120.148" stroke="black" stroke-width="10"/>
+<line x1="216.133" y1="5.86831" x2="1.15567" y2="117.931" stroke="black" stroke-width="5"/>
 </svg>

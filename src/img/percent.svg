@@ -1,17 +1,5 @@
-<svg width="221" height="203" viewBox="0 0 221 203" fill="none" xmlns="http://www.w3.org/2000/svg">
-<path d="M175.864 7.60699L215.549 5.7503" stroke="black" stroke-width="10" stroke-linecap="round"/>
-<path d="M189.372 34.8171L215.74 5.36691" stroke="black" stroke-width="10" stroke-linecap="round"/>
-<mask id="path-3-inside-1" fill="white">
-<rect x="27.1899" y="125.128" width="47.1333" height="77.8725" rx="5"/>
-</mask>
-<rect x="27.1899" y="125.128" width="47.1333" height="77.8725" rx="5" stroke="#FF0000" stroke-width="12" mask="url(#path-3-inside-1)"/>
-<mask id="path-4-inside-2" fill="white">
-<rect x="170.639" y="61.5996" width="47.1333" height="141.4" rx="5"/>
-</mask>
-<rect x="170.639" y="61.5996" width="47.1333" height="141.4" rx="5" stroke="#08B00F" stroke-width="12" mask="url(#path-4-inside-2)"/>
-<mask id="path-5-inside-3" fill="white">
-<rect x="98.9146" y="94.3873" width="47.1333" height="108.612" rx="5"/>
-</mask>
-<rect x="98.9146" y="94.3873" width="47.1333" height="108.612" rx="5" stroke="#FFD600" stroke-width="12" mask="url(#path-5-inside-3)"/>
-<line x1="217.288" y1="8.08518" x2="2.31103" y2="120.148" stroke="black" stroke-width="10"/>
+<svg width="223" height="208" viewBox="0 0 223 208" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M53.8433 204L163.647 3.99999" stroke="#C90000" stroke-width="8" stroke-linecap="round"/>
+<circle cx="42.2569" cy="54.0565" r="38.2569" stroke="#C90000" stroke-width="8"/>
+<circle cx="180.614" cy="157.653" r="38.2569" stroke="#C90000" stroke-width="8"/>
 </svg>

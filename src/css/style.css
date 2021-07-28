@@ -219,6 +219,12 @@ body {
   transform: translate(0px,-100%);
   background: linear-gradient(180deg, rgba(11, 29, 38, 0) 5%, #FFFFFF 100%);
 }
+.content_courseName {
+  font-size: 45px;
+  margin: 30px 0px 30px 0px;
+  font-family: 'Roboto', sans-serif;
+  text-align: center;
+}
 .content_container {
   margin-top: 30px;
   margin-bottom: 30px;
@@ -311,6 +317,170 @@ body {
   padding: 25px !important;
 }
 
+.content_text_courses {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: center;
+}
+.content_text_courses_block {
+  min-width: 300px;
+  width: 48%;
+  display: grid;
+  justify-items: center;
+  grid-template-columns: 1fr 1fr; 
+  grid-template-rows: auto;
+  grid-template-areas: 
+    "name name"
+    "ege oge"; 
+  margin-bottom: 20px;
+  border-radius: 25px;
+  overflow: hidden;
+  border: 1px solid #141414;
+  vertical-align: middle;
+  text-align: center;
+  font-weight: 600;
+}
+#physics_bg {
+  background: linear-gradient(180deg, #612B83 0%, #CD7BFF 0.01%, #E3B5FF 48.39%, #FFFFFF 98.82%);
+}
+#physics_img {
+  background-image: url(/src/img/physics.svg);
+}
+#math_bg {
+  background: linear-gradient(180deg, #39E141 0%, #6DFF74 48.39%, #FFFFFF 98.82%);}
+#math_img {
+  background-image: url(/src/img/math.svg);
+}
+.content_text_courses_block_name {
+  grid-area: name;
+  width: 100%;
+  line-height: 50px;
+  text-align: center;
+  vertical-align: middle;
+  border-bottom: 1px solid #141414;
+}
+.content_text_courses_block p {
+  text-align: center;
+  font-size: 25px;
+}
+.content_text_courses_block a {
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 30px;
+  font-weight: bolder;
+  text-decoration: none;
+  color: #434343;
+}
+#physics_img a:hover {
+  color: #fff;
+  background-color: rgba(196, 50, 209, 0.3);
+  text-shadow: 1px 1px 10px #000;
+}
+#math_img a:hover {
+  color: #fff;
+  background-color: rgba(57, 175, 72, 0.3);
+  text-shadow: 1px 1px 10px #000;
+}
+.content_text_courses_block_ege {
+  grid-area: ege;
+  width: 100%;
+  height: 300px;
+  vertical-align: middle;
+  text-align: center;
+  border-right: 1px solid #141414;
+}
+.content_text_courses_block_oge {
+  grid-area: oge;
+  width: 100%;
+  height: 300px;
+  vertical-align: middle;
+  text-align: center;
+  border-left: 1px solid #141414;
+}
+
+.content_text_teachers {
+  display: flex;
+  flex-wrap: wrap;
+  align-content: center;
+  justify-content: space-around;
+  align-items: center;
+}
+.content_text_teachers_frame {
+  margin: 10px;
+  position: relative;
+  width: 23%;
+  min-width: 130px;
+}
+.content_text_teachers_frame p {
+  position: absolute;
+  font-size: 30px;
+  font-weight: 700;
+}
+.content_text_teachers_frame_ege {
+  right: 10px;
+}
+.content_text_teachers_frame_oge {
+  bottom: 10px;
+  right: 15px;
+}
+.content_text_teachers_frame object {
+  width: 100%;
+}
+
+.content_text_help {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: center;
+  margin-bottom: 20px;
+}
+.content_text_help_body {
+  display: grid !important; 
+  grid-template-areas: 
+    "help_title help_title help_title"
+    "arrowUp help_text arrowDown";
+  align-content: center;
+  justify-content: center;
+  align-items: center;
+  justify-items: center;
+  width: 70%;
+  margin-bottom: 40px;
+}
+.content_text_help_body_title {
+  grid-area: help_title;
+  font-weight: 700;
+  font-size: 28px;
+  text-align: center !important;
+  margin-bottom: 15px;
+}
+.content_text_help_body_arrowUp {
+  grid-area: arrowUp;
+  margin-right: -60px;
+  max-width: 120px;
+}
+.content_text_help_body_arrowDown {
+  grid-area: arrowDown;
+  margin-left: -60px;
+  max-width: 120px;
+}
+.content_text_help_body_text {
+  grid-area: help_text;
+  text-align: center !important;
+}
+.content_text_help_img {
+  width: 20%;
+  min-width: 100px;
+  margin-bottom: 40px;
+}
+.content_text_help_img object {
+  width: 100%;
+}
+
 .footer {
   /*background-color: #141414;*/
   position: relative;
@@ -319,7 +489,6 @@ body {
   font-family: "PT Sans";
   overflow: hidden;
 }
-
 .linkYouTube:hover .icon__main,
 .linkYouTube:active .icon__main,
 .linkYouTube:focus .icon__main {
@@ -336,7 +505,19 @@ body {
 .linkVK:focus .icon__main {
   fill: #4D76A4;
 }
-
+.footer_link {
+  font-weight: bolder;
+  text-decoration: none;
+  text-align: center;
+  color: #fff;
+  display: inline-block;
+  height: auto;
+  line-height: normal;
+  padding: 5px 10px 17px 10px;
+}
+.footer_link:hover {
+  text-shadow: 1px 1px 10px #fff;
+}
 
 /*** Навигация ***/
 .main-nav {
@@ -637,13 +818,30 @@ body {
   .content_text {
     font-size: 16px;
   }
-  .content_title {
+  .content_title,
+  .content_courseName {
     font-size: 30px;
+  }
+  .content_text_help_body_title {
+    font-size: 20px;
   }
 }
 @media screen and (max-width: 991px) {
   ._container {
     width: 720px;
+  }
+  .content_text_teachers_frame p {
+    position: absolute;
+    font-size: 25px;
+    font-weight: 700;
+  }
+  .content_text_teachers_frame_ege {
+    right: 5px;
+    top: -10px;
+  }
+  .content_text_teachers_frame_oge {
+    bottom: 3px;
+    right: 5px;
   }
 }
 @media screen and (max-width: 767px) {
@@ -682,8 +880,31 @@ body {
   .content_text {
     font-size: 16px;
   }
-  .content_title {
+  .content_title,
+  .content_courseName {
     font-size: 25px;
+  }
+  .content_text_help_body {
+    width: 100%;
+  }
+  .content_text_help_body_title {
+    font-size: 16px;
+  }
+  .content_text_help_body_arrowUp {
+    margin-right: -45px;
+    margin-left: -35px;
+    max-width: 200px !important;
+    height: 170px;
+  }
+  .content_text_help_body_arrowDown {
+    margin-left: -45px;
+    margin-right: -35px;
+    max-width: 200px !important;
+    height: 170px;
+  }
+  .content_text_help_body_text {
+    grid-area: help_text;
+    text-align: center !important;
   }
 }
 @media screen and (max-width: 575px) {
@@ -693,7 +914,7 @@ body {
     padding: 0 15px;
   }
   .parallax_body_logo {
-    padding-top: 30px;
+    padding-top: 70px;
   }
 }
 
