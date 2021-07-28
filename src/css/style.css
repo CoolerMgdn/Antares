@@ -242,7 +242,8 @@ body {
   font-size: 18px;
   line-height: 150%;
 }
-.content_text p {
+.content_text p,
+.content_text h1 {
   /*margin: 0px 0px 30px 0px;*/
   text-align: justify;
   font-family: 'Open Sans', sans-serif;
@@ -480,13 +481,21 @@ body {
 .content_text_help_img object {
   width: 100%;
 }
+.content_text p a {
+  font-weight: 700;
+  color: #434334;
+}
+.content_text p a:hover {
+  color: #000;
+  text-shadow: 1px 1px 30px #434343;
+}
 
 .footer {
   /*background-color: #141414;*/
   position: relative;
   z-index: 2;
   color: white;
-  font-family: "PT Sans";
+  font-family: 'Open Sans', sans-serif;
   overflow: hidden;
 }
 .linkYouTube:hover .icon__main,
@@ -506,6 +515,7 @@ body {
   fill: #4D76A4;
 }
 .footer_link {
+  font-family: 'Open Sans', sans-serif;
   font-weight: bolder;
   text-decoration: none;
   text-align: center;
