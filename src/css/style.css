@@ -175,11 +175,6 @@ body {
   opacity: 0.8;
   text-transform: uppercase;
 }
-.parallax_nav li a.cd-link:hover {
-  /*background: #fbd784;*/
-  /*background: url(../img/sas.svg) no-repeat top left;*/
-  /*background-image:url(../img/sas.svg);*/
-}
 .parallax_nav li a:hover {
   opacity: 1;
 }
