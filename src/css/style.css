@@ -230,6 +230,46 @@ body {
   transform: translate(0px,-100%);
   background: linear-gradient(180deg, rgba(11, 29, 38, 0) 5%, #FFFFFF 100%);
 }
+
+.content_shortDescription{
+  padding: .6em 1em;
+  border: none;
+  opacity: 0.8;
+  text-transform: uppercase;
+  font-weight: bolder;
+  text-decoration: none;
+  text-align: center;
+  color: #343434;
+  position: relative;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: center;
+}
+.content_shortDescription:hover {
+  opacity: 1;
+}
+.content_shortDescription::after {
+  content: '';
+  bottom:0%;
+  left: 0px;
+  width: 100%;
+  height: 2px;
+  background: #343434;
+  display: block;
+  -webkit-transform-origin: left top;
+  -ms-transform-origin: left top;
+  transform-origin: left top;
+  -webkit-transform: scale(1, 1);
+  -ms-transform: scale(1, 1);
+  transform: scale(1, 1);
+  opacity: 0.5;
+  margin-top: 10px;
+}
+.content_shortDescription:hover::after {
+  opacity: 1;
+}
+
 .content_courseName {
   font-size: 45px;
   margin: 90px 0px 30px 0px;
