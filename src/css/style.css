@@ -353,7 +353,8 @@ body {
 .parallelogram5Click {
   height: 100% !important;
   background: #E5FFE5;
-  transform: skewX(20deg);
+  /*transform: skewX(20deg);*/
+  transform: skewX(-20deg);
   opacity: 1;
 }
 
@@ -537,13 +538,41 @@ body {
 .content_text_help_img object {
   width: 100%;
 }
+.content_text_help_link {
+  margin-top: 30px;
+  text-align: center !important;
+  font-size: 28px;
+  font-weight: 500;
+  text-shadow: 0px 0px 15px #AA699C;
+  color: #2c2c2cb0;
+}
+.content_text_help_link::before {
+  content: '';
+  bottom:0%;
+  left: 0px;
+  width: 100%;
+  height: 2px;
+  background: #343434;
+  display: block;
+  -webkit-transform-origin: left top;
+  -ms-transform-origin: left top;
+  transform-origin: left top;
+  -webkit-transform: scale(1, 1);
+  -ms-transform: scale(1, 1);
+  transform: scale(1, 1);
+  opacity: 0.6;
+  margin-bottom: 20px;
+}
 .content_text p a {
-  font-weight: 700;
-  color: #434334;
+  font-family: 'Roboto', sans-serif;
+  font-weight: bold;
+  color: #AA699C;
+  text-transform: uppercase;
+
 }
 .content_text p a:hover {
-  color: #000;
-  text-shadow: 1px 1px 30px #434343;
+  color: #fff;
+  text-shadow: 0px 0px 10px #434343;
 }
 
 .footer {
@@ -760,9 +789,20 @@ body {
     padding-right: 0px;
   }
 }
-  
-/*======= Появляющееся меню для маленьких экранов (1400px) =======*/
+
 @media screen and (max-width: 1400px) {
+  .main-nav {
+    height: 60px;
+    opacity: 1;
+    visibility: visible !important;
+  }
+  .main-nav.navShadow {
+    height: 60px;
+  }
+}
+
+/*======= Появляющееся меню для маленьких экранов (1024px) =======*/
+@media screen and (max-width: 1024px) {
   #menu {
     padding-right: 0px;
     justify-content: flex-end !important;
@@ -826,6 +866,10 @@ body {
     -webkit-transform: scale(0.8);
             transform: scale(0.8);
   }
+}
+/*======= /Появляющееся меню для маленьких экранов (1024px) =======*/
+
+@media screen and (max-width: 1400px) {
   .parallax_body object {
     left: 54%;
   }
@@ -839,8 +883,6 @@ body {
     display: none;
   }
 }
-/*======= /Появляющееся меню для маленьких экранов (1400px) =======*/
-
   /*======================= Мобильная версия =======================*/
 @media screen and (max-width: 820px) {
     .main-nav #menu #menu-toggle {
@@ -904,7 +946,8 @@ body {
   .content_courseName {
     font-size: 30px;
   }
-  .content_text_help_body_title {
+  .content_text_help_body_title,
+  .content_text_help_link {
     font-size: 20px;
   }
 }
@@ -944,7 +987,8 @@ body {
   .parallelogram3Click,
   .parallelogram4Click,
   .parallelogram5Click {
-    transform: skewX(10deg);
+    /*transform: skewX(10deg);*/
+    transform: skewX(-10deg);
     height: 100% !important;
   }
   .content_text_topic {
@@ -970,7 +1014,8 @@ body {
   .content_text_help_body {
     width: 100%;
   }
-  .content_text_help_body_title {
+  .content_text_help_body_title,
+  .content_text_help_link {
     font-size: 16px;
   }
   .content_text_help_body_arrowUp {
