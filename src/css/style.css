@@ -105,6 +105,16 @@ body {
 .parallax_title {
   font-size: 88px;
 }
+@keyframes body_title {
+  0% {
+    opacity: 0;
+    transform: translateX(-50px)
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0px)
+  }
+}
 .parallax_body_title {
   position: absolute;
   width: 100%;
@@ -115,6 +125,7 @@ body {
   letter-spacing: 0.25em;
   z-index: 10;
   margin-top: -70px;
+  animation: body_title 3s ease-in-out;
 }
 .parallax_images {
   position: absolute;
