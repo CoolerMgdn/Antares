@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500;600;700&display=swap');
 
 /* Обнуление */
 *,
@@ -36,8 +37,7 @@ body {
     font-size: 16px;
     background-color: #141414;
     color: #ffffff;
-    font-family: "PT Sans";
-}
+    font-family: "Open Sans", sans-serif;}
 .wrapper {
     min-height: 100%;
 }
@@ -182,7 +182,7 @@ body {
   font-weight: bolder;
   text-decoration: none;
   text-align: center;
-  font-family: "PT Sans", sans-serif;
+  font-family: "Open Sans", sans-serif;
   color: #fff;
   text-shadow: 1px 1px 10px #000;
   display: inline-block;
@@ -235,7 +235,7 @@ body {
   position: relative;
   z-index: 2;
   color: #434343;
-  font-family: "PT Sans";
+  font-family: "Open Sans", sans-serif;
   padding-top: 20px;
   padding-bottom: 20px;
 }
@@ -327,10 +327,11 @@ body {
 }
 .content_text_topic p {
   /*font-size: 28px;*/
-  font-size: 34px;
+  font-size: 28px;
   font-weight: 700;
-  /**/
-  font-family: 'Cormorant Garamond', serif !important; 
+  /*
+  font-family: 'Cormorant Garamond', serif !important; */
+  font-family: 'Montserrat', sans-serif !important;
 }
 .content_text_topic object {
   max-width: 4%;
@@ -541,10 +542,11 @@ body {
   grid-area: help_title;
   font-weight: 700;
   /*font-size: 28px;*/
-  font-size: 34px;
+  font-size: 28px;
   text-align: center !important;
   margin-bottom: 15px;
-  font-family: 'Cormorant Garamond', serif !important; 
+  /*font-family: 'Cormorant Garamond', serif !important; */
+  font-family: 'Montserrat', sans-serif !important;
 }
 .content_text_help_body_arrowUp {
   grid-area: arrowUp;
@@ -975,7 +977,7 @@ body {
   font-weight: bolder;
   text-decoration: none;
   text-align: center;
-  font-family: "PT Sans", sans-serif;
+  font-family: "Open Sans", sans-serif;
   color: #fff;
   text-shadow: 1px 1px 10px #000;
   display: inline-block;
