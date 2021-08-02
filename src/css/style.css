@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600;700&display=swap');
+
 /* Обнуление */
 *,
 *::before,
@@ -108,15 +110,18 @@ body {
 @keyframes body_title {
   0% {
     opacity: 0;
-    transform: translateX(-50px)
+    /*transform: translateX(-50px)*/
   }
   100% {
     opacity: 1;
-    transform: translateX(0px)
+    /*transform: translateX(0px)*/
   }
 }
 .parallax_body_title {
-  position: absolute;
+  display: flex;
+  align-content: center;
+  justify-content: center;
+  align-items: center;
   width: 100%;
   font-size: 45px;
   margin: 30px 0px 30px 0px;
@@ -124,8 +129,17 @@ body {
   text-align: center;
   letter-spacing: 0.25em;
   z-index: 10;
-  margin-top: -70px;
+  margin-top: -60px;
+}
+.parallax_body_title_1 {
   animation: body_title 3s ease-in-out;
+  margin-right: 20px;
+}
+.parallax_body_title_2 {
+  animation: body_title 4s ease-in-out;
+}
+.parallax_body_title_3 {
+  animation: body_title 4s ease-in-out;
 }
 .parallax_images {
   position: absolute;
@@ -309,18 +323,20 @@ body {
 .content_text_topic {
   display: flex;
   align-items: center;
-  padding-top: 10px;
+  padding-top: 20px;
 }
 .content_text_topic p {
   font-size: 28px;
-  font-weight: bold;
+  font-weight: 700;
+  /**/
+  font-family: 'Cormorant Garamond', serif !important; 
 }
 .content_text_topic object {
   max-width: 4%;
   padding-right: 10px;
 }
 .content_text_aboutFormat {
-  padding-left: 4%;
+  padding-left: 3%;
 }
 
 .content_text_faq {
@@ -337,7 +353,7 @@ body {
   min-height: 100%;
   height: 150px;
 	background: radial-gradient(65.07% 69.25% at 50% 50%, #FFFEE0 0%, rgba(255, 253, 220, 0.983288) 12.81%, rgba(255, 252, 220, 0.934375) 50.31%, rgba(255, 217, 205, 0) 100%);
-	border: 1px solid #141414;
+	border: 1px solid #343434;
   border-radius: 20px;
   transform: skewX(-20deg);
 	transform-origin: center;
@@ -349,13 +365,20 @@ body {
   padding: 20px;
   font-family: 'Open Sans', sans-serif !important;
   cursor: pointer;
+  text-align: justify !important;
+  font-weight: 600;
 }
 .parallelogram1 p,
 .parallelogram2 p,
 .parallelogram3 p,
 .parallelogram4 p,
-.parallelogram5 p{
-  text-align: justify !important;
+.parallelogram5 p,
+.parallelogram1Click text,
+.parallelogram2Click text,
+.parallelogram3Click text,
+.parallelogram4Click text,
+.parallelogram5Click text{
+  /*transform: skewX(20deg) !important;*/
 }
 .parallelogram1Click, 
 .parallelogram2Click,
@@ -368,22 +391,14 @@ body {
   transform: skewX(-20deg);
   opacity: 1;
 }
-
 .parallelogram1:hover,
 .parallelogram2:hover,
 .parallelogram3:hover,
 .parallelogram4:hover,
 .parallelogram5:hover {
-  border: 2px solid #000000;
+  border: 1px solid #000;
+  color: #000;
   opacity: 1;
-}
-.parallelogram1 #text,
-.parallelogram2 #text,
-.parallelogram3 text,
-.parallelogram4 text,
-.parallelogram5 text{
-	transform: skewX(25deg) !important;
-  padding: 25px !important;
 }
 
 .content_text_courses {
@@ -507,6 +522,7 @@ body {
   justify-content: space-around;
   align-items: center;
   margin-bottom: 20px;
+  margin-top: 50px;
 }
 .content_text_help_body {
   display: grid !important; 
@@ -526,6 +542,7 @@ body {
   font-size: 28px;
   text-align: center !important;
   margin-bottom: 15px;
+  font-family: 'Cormorant Garamond', serif !important; 
 }
 .content_text_help_body_arrowUp {
   grid-area: arrowUp;
@@ -554,7 +571,7 @@ body {
   text-align: center !important;
   font-size: 28px;
   font-weight: 500;
-  text-shadow: 0px 0px 15px #AA699C;
+  /*text-shadow: 0px 0px 15px #AA699C;*/
   color: #2c2c2cb0;
 }
 .content_text_help_link::before {
@@ -599,6 +616,11 @@ body {
 .linkYouTube:focus .icon__main {
   fill: #cd201f;
 }
+.linkTelegram:hover .icon__main,
+.linkTelegram:active .icon__main,
+.linkTelegram:focus .icon__main {
+  fill: #039BE5;
+}
 .linkInstagram:hover .icon__main,
 .linkInstagram:active .icon__main,
 .linkInstagram:focus .icon__main {
@@ -629,6 +651,123 @@ body {
   padding-bottom: 20px !important;
   margin-top: 0 !important;
   margin-bottom: 0 !important;
+}
+#footer {
+  display: flex;
+  flex-wrap: wrap;
+  align-content: center;
+  justify-content: space-between;
+}
+#contacts {
+  text-transform: none !important;
+}
+
+/* Картинки на страницах курсов */
+.content_text_images {
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  flex-wrap: wrap;
+}
+.content_text_images img {
+  padding: 10px;
+}
+.minimized {
+  width: 300px;
+  cursor: pointer;
+  border: 1px solid #FFF;
+}
+.minimized:hover {
+  border: 1px solid #343434;
+}
+/* увеличенная картинка */
+#magnify {
+  display: none;
+  /* position: absolute; upd: 24.10.2016 */
+  position: fixed;
+  max-width: 600px;
+  height: auto;
+  z-index: 9999;
+}
+#magnify img {
+  width: 100%;
+}
+/* затемняющий фон */
+#overlay {
+  display: none;
+  background: #000;
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  opacity: 0.5;
+  z-index: 9990;
+}
+/* кнопка закрытия */
+#close-popup {
+  width: 30px;
+  height: 30px;
+  background: #FFFFFF;
+  border: 1px solid #AFAFAF;
+  border-radius: 15px;
+  cursor: pointer;
+  position: absolute;
+  top: 15px;
+  right: 15px;
+}
+#close-popup i {
+  width: 28px;
+  height: 28px;
+  background: url(https://codernote.ru/files/cross.png) no-repeat center center;
+  background-size: 16px 16px;
+  display: block;
+}
+#close-popup:hover {
+  animation: rota 4s infinite normal;
+  -webkit-animation-iteration-count: 1;
+  animation-iteration-count: 1;
+}
+/* /Картинки на страницах курсов */
+
+.content_text_buy {
+  display: flex;
+  padding-top: 40px;
+  padding-bottom: 20px;
+  align-content: center;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  vertical-align: middle;
+}
+.content_text_buy_button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 30px;
+  font-weight: bolder;
+  text-decoration: none;
+  color: #434343;
+  width: 300px;
+  height: 100px;
+  background: #FF8A00;
+}
+.content_text_buy_button:hover .content_text_buy_rectangle {
+  transform: translateX(0px) translateY(0px);
+  transition: all 100ms ease-in;
+}
+.content_text_buy_button:hover {
+  color: #000;
+  transition: all 100ms ease-in;
+  background: #FFA800;
+}
+.content_text_buy_rectangle {
+  position: absolute;
+  width: 300px;
+  height: 100px;
+  border: 1px solid #434343;
+  transform: translateX(-10px) translateY(-10px);
 }
 
 /*** Навигация ***/
@@ -887,7 +1026,10 @@ body {
   .parallax_nav {
     visibility: hidden;
   }
-  .parallax_body_title {
+  .parallax_body_title,
+  .parallax_body_title_1,
+  .parallax_body_title_2,
+  .parallax_body_title_3 {
     margin: 30px 0px 30px 0px;
     margin-top: -70px;
     position: relative;
@@ -928,6 +1070,9 @@ body {
 @media screen and (max-width: 1700px) {
   ._container {
     width: 1350px;
+  }
+  .content_text_aboutFormat {
+    padding-left: 4%;
   }
 }
 @media screen and (max-width: 1400px) {
