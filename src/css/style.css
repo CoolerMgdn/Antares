@@ -1281,6 +1281,9 @@ body {
     grid-area: help_text;
     text-align: center !important;
   }
+  .content_text_images {
+    justify-content: center;
+  }
 }
 @media screen and (max-width: 575px) {
   ._container {
