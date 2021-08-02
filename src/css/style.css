@@ -599,7 +599,7 @@ body {
 .footer {
   /*background-color: #141414;*/
   position: relative;
-  z-index: 2;
+  /*z-index: 2;*/
   color: white;
   font-family: 'Open Sans', sans-serif;
   overflow: hidden;
