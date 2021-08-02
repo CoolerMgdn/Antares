@@ -370,18 +370,7 @@ body {
   text-align: justify !important;
   font-weight: 600;
 }
-.parallelogram1 p,
-.parallelogram2 p,
-.parallelogram3 p,
-.parallelogram4 p,
-.parallelogram5 p,
-.parallelogram1Click text,
-.parallelogram2Click text,
-.parallelogram3Click text,
-.parallelogram4Click text,
-.parallelogram5Click text{
-  /*transform: skewX(20deg) !important;*/
-}
+
 .parallelogram1Click, 
 .parallelogram2Click,
 .parallelogram3Click,
