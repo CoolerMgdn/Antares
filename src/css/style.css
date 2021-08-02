@@ -627,12 +627,16 @@ body {
 .linkInstagram:active .icon__main,
 .linkInstagram:focus .icon__main {
   fill: #DD2A7B;
-  
 }
 .linkVK:hover .icon__main,
 .linkVK:active .icon__main,
 .linkVK:focus .icon__main {
   fill: #4D76A4;
+}
+.linkWhatsapp:hover .icon__main,
+.linkWhatsapp:active .icon__main,
+.linkWhatsapp:focus .icon__main {
+  fill: #25D366;
 }
 .footer_link {
   font-family: 'Open Sans', sans-serif;
@@ -653,6 +657,7 @@ body {
   padding-bottom: 20px !important;
   margin-top: 0 !important;
   margin-bottom: 0 !important;
+  background-image: none;
 }
 #footer {
   display: flex;
@@ -675,7 +680,7 @@ body {
   padding: 10px;
 }
 .minimized {
-  width: 300px;
+  width: 280px;
   cursor: pointer;
   border: 1px solid #FFF;
 }
@@ -687,7 +692,7 @@ body {
   display: none;
   /* position: absolute; upd: 24.10.2016 */
   position: fixed;
-  max-width: 600px;
+  max-width: 800px;
   height: auto;
   z-index: 9999;
 }
@@ -707,6 +712,7 @@ body {
   z-index: 9990;
 }
 /* кнопка закрытия */
+/*
 #close-popup {
   width: 30px;
   height: 30px;
@@ -729,6 +735,21 @@ body {
   animation: rota 4s infinite normal;
   -webkit-animation-iteration-count: 1;
   animation-iteration-count: 1;
+}*/
+#close-popup {
+  color: #fff;
+  position: absolute;
+  top: -25px;
+  right: 0;
+  font-size: 30px;
+  font-weight: bold;
+  border-radius: 15px;
+}
+#close-popup:hover,
+#close-popup:focus {
+  color: #000;
+  text-decoration: none;
+  cursor: pointer;
 }
 /* /Картинки на страницах курсов */
 
@@ -754,6 +775,7 @@ body {
   width: 300px;
   height: 100px;
   background: #FF8A00;
+  cursor: pointer;
 }
 .content_text_buy_button:hover .content_text_buy_rectangle {
   transform: translateX(0px) translateY(0px);
@@ -771,6 +793,81 @@ body {
   border: 1px solid #434343;
   transform: translateX(-10px) translateY(-10px);
 }
+
+/* Модальное окно */
+/* (background) */
+.modal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  padding-top: 100px; /* Location of the box */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+.modal-content {
+  background-color: #fefefe;
+  margin: auto;
+  padding: 20px;
+  border: 1px solid #888;
+  width: 550px;
+  border-radius: 25px;
+}
+.modal_container {
+  width: 100%;
+  margin: 0px auto;
+  overflow: hidden;
+  background-image: url("data:image/svg+xml,%3csvg width='100%25' height='100%25' xmlns='http://www.w3.org/2000/svg'%3e%3crect width='100%25' height='100%25' fill='none' rx='35' ry='35' stroke='%23141414FF' stroke-width='4' stroke-dasharray='20' stroke-dashoffset='0' stroke-linecap='butt'/%3e%3c/svg%3e");
+  border-radius: 35px;
+  margin-top: 30px;
+  padding-left: 30px;
+  padding-right: 30px;
+  padding-bottom: 30px !important;
+}
+.modal_social {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+}
+#modal_tel {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  padding-top: 15px;
+}
+.modal_tel {
+  font-family: 'Open Sans', sans-serif;
+  font-weight: bolder;
+  text-decoration: none;
+  color: #434343 !important;
+  display: inline-block;
+  height: auto;
+  line-height: normal;
+  text-align: end;
+}
+.modal_tel:hover {
+  color: #FFF !important;
+  text-shadow: 1px 1px 10px #434343;
+}
+.close {
+  color: #aaaaaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+.close:hover,
+.close:focus {
+  color: #000;
+  text-decoration: none;
+  cursor: pointer;
+}
+/* /Модальное окно */
 
 /*** Навигация ***/
 .main-nav {
@@ -1201,6 +1298,12 @@ body {
   }
   .parallax_body_logo {
     padding-top: 70px;
+  }
+  #magnify {
+    max-width: 80%;
+  }
+  .modal-content {
+    width: 80%;
   }
 }
 
