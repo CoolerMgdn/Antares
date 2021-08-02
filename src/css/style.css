@@ -326,7 +326,8 @@ body {
   padding-top: 20px;
 }
 .content_text_topic p {
-  font-size: 28px;
+  /*font-size: 28px;*/
+  font-size: 34px;
   font-weight: 700;
   /**/
   font-family: 'Cormorant Garamond', serif !important; 
@@ -539,7 +540,8 @@ body {
 .content_text_help_body_title {
   grid-area: help_title;
   font-weight: 700;
-  font-size: 28px;
+  /*font-size: 28px;*/
+  font-size: 34px;
   text-align: center !important;
   margin-bottom: 15px;
   font-family: 'Cormorant Garamond', serif !important; 
