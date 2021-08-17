@@ -25,6 +25,14 @@
 <body>
     <!-- ШАПКА -->
     <nav class="main-nav">
+        
+        <a class="menu-logo" href="index.html">
+            <svg width="50" height="50" viewBox="0 0 180 180" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <circle id="menu-logo-circle" cx="90" cy="90" r="90" fill="white"/>
+                <path id="menu-logo-A" d="M85.8252 22.1104C91.2451 22.1104 95.9326 23.7217 99.8877 26.9443C103.989 30.0205 107.505 34.1953 110.435 39.4688C113.511 44.7422 116.074 50.8213 118.125 57.7061C120.176 64.5908 121.86 71.8418 123.179 79.459C124.497 86.9297 125.522 94.5469 126.255 102.311C126.987 109.928 127.5 117.105 127.793 123.844C128.086 130.582 128.232 136.661 128.232 142.081C128.379 147.501 128.452 151.749 128.452 154.825H123.179L114.829 108.463C114.097 107.73 112.412 107.291 109.775 107.145C107.285 106.998 104.282 107.071 100.767 107.364C97.3975 107.657 93.6621 108.097 89.5605 108.683C85.6055 109.122 81.7969 109.488 78.1348 109.781C74.6191 109.928 71.3965 110.001 68.4668 110.001C65.5371 109.854 63.4131 109.342 62.0947 108.463V154.825H50.8887C50.8887 154.386 50.8887 153.58 50.8887 152.408C51.0352 151.09 51.1084 149.771 51.1084 148.453C51.1084 147.135 51.1816 145.89 51.3281 144.718C51.4746 143.546 51.5479 142.74 51.5479 142.301C52.4268 133.805 53.0859 125.235 53.5254 116.593C54.1113 107.804 54.7705 99.3076 55.5029 91.1045C56.2354 82.9014 57.1875 75.0645 58.3594 67.5938C59.6777 60.123 61.5088 53.3848 63.8525 47.3789C66.1963 41.2266 69.126 36.0264 72.6416 31.7783C76.1572 27.3838 80.5518 24.1611 85.8252 22.1104ZM89.3408 32.2178C85.5322 32.2178 82.3096 33.6094 79.6729 36.3926C77.1826 39.0293 75.1318 42.5449 73.5205 46.9395C71.9092 51.1875 70.6641 55.9482 69.7852 61.2217C68.9062 66.4951 68.3203 71.6953 68.0273 76.8223C67.7344 81.8027 67.5146 86.4902 67.3682 90.8848C67.3682 95.1328 67.3682 98.4287 67.3682 100.772C74.5459 100.772 81.8701 100.26 89.3408 99.2344C96.8115 98.0625 103.843 96.8906 110.435 95.7188C110.581 95.1328 110.654 94.1807 110.654 92.8623C110.801 91.5439 110.874 90.0791 110.874 88.4678C111.021 86.8564 111.094 85.3184 111.094 83.8535C111.24 82.3887 111.313 81.4365 111.313 80.9971C111.313 76.1631 111.021 71.5488 110.435 67.1543C109.995 62.7598 108.97 58.5117 107.358 54.4102C105.894 50.1621 103.696 46.207 100.767 42.5449C97.9834 38.8828 94.1748 35.4404 89.3408 32.2178Z" fill="#141414"/>
+            </svg>
+        </a>
+
         <div id="menu">
             <div id="menu-toggle">
                 <div id="menu-icon">
@@ -39,6 +47,7 @@
                 <li><a class="cd-link" href="#section03">Курсы</a></li>
                 <!--<li><a class="cd-link" href="#section04">Учителя</a></li>-->
                 <li><a class="cd-link" href="#section06">Контакты</a></li>
+                <li><a class="cd-link" href="#section05" id="opacity">Краткое описание школы</a></li>
             </ul>
         </div>
     </nav>
@@ -63,6 +72,9 @@
             <!-- Навигация -->
             <div class="parallax_nav">
                 <ul>
+                    <li><a class="cd-link" href="#section05" id="opacity">&#62 Краткое описание школы &#60</a></li>
+                </ul>
+                <ul>
                     <li><a class="cd-link" href="#section01">О нас</a></li>
                     <li><a class="cd-link" href="#section02">Формат обучения</a></li>
                     <li><a class="cd-link" href="#section03">Курсы</a></li>
@@ -73,23 +85,27 @@
             <!-- /Навигация -->
         </section>
         <section class="content">
+        <!--
             <a class="content_shortDescription" href="#section05">
                 Краткое описание школы
             </a>
+        -->
             <!-- О нас -->
             <div class="content_container _container" id="section01" data-aos="fade-up"
             data-aos-anchor-placement="top-bottom" data-aos-duration="1000">
                 <h2 class="content_title">О нас</h2>
-                <div class="content_text">
-                    <h1>Школа “Антарес” - это революция в сфере онлайн-образования. Существующие на сегодняшний день форматы обучения с использованием всемирной сети имеют существенный недостаток: они создают барьер между обучающим и обучающимся, что вызывает трудности в изучении материала. 
-                        <br><br>Мы поставили перед собой задачу разработать принципиально новую систему, основанную на индивидуальном подходе к каждому ученику, с сохранением группового обучения. 
-                        <br>Мы эту задачу выполнили. 
-                        <br><br>Цель наших курсов - не просто подготовить ребят к экзаменам, но и помочь каждому ученику разобраться в предмете и научиться понимать его. Со своей стороны мы создали все условия, чтобы процесс обучения был максимально результативен, при этом оставаясь доступным и, в определённой мере, приятным. И эта заслуга далеко не одного человека, а целого коллектива. 
-                        <br><br>Ребята, для вашего успешного пути всё готово, и мы вам в этом поможем! 
-                        <br>Мы улетаем, вы с нами?</h1>
+                <div class="content_text content_text_video">
+                    <iframe class="video"  src="https://www.youtube.com/embed/KxRZX9eDpCs" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+                    <h1>Школа “Антарес” - это революция в сфере онлайн-образования. В наши дни форматы онлайн-обучения имеют существенный недостаток: они создают барьер между вебинаристом и учеником, что вызывает трудности в изучении материала. Мы нашли способ, как его преодолеть. 
+                        <br><br>Цель наших курсов - не просто подготовить ребят к экзаменам, но и помочь каждому ученику разобраться в предмете и научиться понимать его.
+                        <br><br>Мы создали все условия, чтобы процесс обучения был максимально результативен, при этом оставаясь приятным.
+                        <br><br>Ребята, для вашего успешного пути всё готово, и мы вам в этом поможем!
+                        <br>Мы улетаем, вы с нами?</h1>                        
                 </div>
+                <!--<a href="" class="content_toggle">Подробнее</a>-->
             </div>
-            <!-- Форматы обучения и FAQ-->
+            <!-- Форматы обучения -->
             <div class="content_container _container" id="section02" data-aos="fade-up"
             data-aos-anchor-placement="top-bottom" data-aos-duration="1000">
                 <h2 class="content_title">Форматы обучения</h2>
@@ -116,28 +132,8 @@
                     </div>
                     <p class="content_text_aboutFormat">Наши ученики получают скидку в зависимости от места в рейтинге среди других учащихся.</p>
                 </div>
-                <h2 class="content_title">FAQ</h2>
-                <div class="content_text">
-                    <p>Нажмите на карточку, чтобы узнать ответ!</p>
-                    <div class="content_text_faq">
-                        <div class="parallelogram1">
-                            <p>Что такое лекция и семинар и в чём их отличие?</p>
-                        </div>
-                        <div class="parallelogram2">
-                            <p>Почему домашнее задание проверяется разными преподавателями?</p>
-                        </div>
-                        <div class="parallelogram3">
-                            <p>Как именно ученики общаются с семинаристом на занятиях?</p>
-                        </div>
-                        <div class="parallelogram4">
-                            <p>Как формируется рейтинг?</p>
-                        </div>
-                        <div class="parallelogram5">
-                            <p>На какую скидку можно рассчитывать?</p>
-                        </div>
-                    </div>
-                </div>
             </div>
+            
             <!-- Курсы -->
             <div class="content_container _container" id="section03" data-aos="fade-up"
             data-aos-anchor-placement="top-bottom" data-aos-duration="1000">
@@ -201,58 +197,83 @@
                 <div class="content_text">
                     <div class="content_text_help">
 
-                        <div class="content_text_help_body">
+                        <div class="content_text_help_body content_text_help_body1">
                             <object class="content_text_help_body_arrowUp" type="image/svg+xml" data="src/img/arrowUp.svg"></object>
                             <p class="content_text_help_body_title">Раздельное и подробное изучение теории и практики!</p>
                             <p class="content_text_help_body_text">У тебя будет 2 вида занятий: <br> Лекции, на которых ты будешь изучать теорию <br> Семинары, на которых ты будешь учиться решать задачи</p>
                             <object class="content_text_help_body_arrowDown" type="image/svg+xml" data="src/img/arrowDown.svg"></object>    
                         </div>
-                        <div class="content_text_help_img">
+                        <div class="content_text_help_img content_text_help_img1">
                             <object type="image/svg+xml" data="src/img/notebook.svg"></object>    
                         </div>
 
-                        <div class="content_text_help_img">
+                        <div class="content_text_help_img content_text_help_img2">
                             <object type="image/svg+xml" data="src/img/atom.svg"></object>    
                         </div>
-                        <div class="content_text_help_body">
+                        <div class="content_text_help_body content_text_help_body2">
                             <object class="content_text_help_body_arrowUp" type="image/svg+xml" data="src/img/arrowUp.svg"></object>
                             <p class="content_text_help_body_title">Постоянный контакт с преподавателями!</p>
                             <p class="content_text_help_body_text">На семинаре ты сможешь задать вопрос преподавателю голосом, а вне занятия сможешь спросить его о чём-то в письменном виде.</p>        
                             <object class="content_text_help_body_arrowDown" type="image/svg+xml" data="src/img/arrowDown.svg"></object>    
                         </div>
 
-                        <div class="content_text_help_body">
+                        <div class="content_text_help_body content_text_help_body3">
                             <object class="content_text_help_body_arrowUp" type="image/svg+xml" data="src/img/arrowUp.svg"></object>
                             <p class="content_text_help_body_title">Постоянная мотивация!</p>
                             <p class="content_text_help_body_text">У тебя будет постоянная мотивация к изучению предметов и подготовке от наших учителей</p>        
                             <object class="content_text_help_body_arrowDown" type="image/svg+xml" data="src/img/arrowDown.svg"></object>    
                         </div>
-                        <div class="content_text_help_img">
+                        <div class="content_text_help_img content_text_help_img3">
                             <object type="image/svg+xml" data="src/img/stars.svg"></object>    
                         </div>
 
-                        <div class="content_text_help_img">
+                        <div class="content_text_help_img content_text_help_img4">
                             <object type="image/svg+xml" data="src/img/chart.svg"></object>    
                         </div>
-                        <div class="content_text_help_body">
+                        <div class="content_text_help_body content_text_help_body4">
                             <object class="content_text_help_body_arrowUp" type="image/svg+xml" data="src/img/arrowUp.svg"></object>
                             <p class="content_text_help_body_title">Рейтинг учеников!</p>
                             <p class="content_text_help_body_text">Когда ты поступишь в нашу школу, ты будешь занимать определённое место в рейтинге со своими однокурсниками</p>        
                             <object class="content_text_help_body_arrowDown" type="image/svg+xml" data="src/img/arrowDown.svg"></object>    
                         </div>
                         
-                        <div class="content_text_help_body">
+                        <div class="content_text_help_body content_text_help_body5">
                             <object class="content_text_help_body_arrowUp" type="image/svg+xml" data="src/img/arrowUp.svg"></object>
                             <p class="content_text_help_body_title">Скидки в зависимости места в рейтинге!</p>
                             <p class="content_text_help_body_text">Если ты будешь находиться высоко в рейтинге, то тебе будет сделана скидка на обучение.</p>        
                             <object class="content_text_help_body_arrowDown" type="image/svg+xml" data="src/img/arrowDown.svg"></object>    
                         </div>
-                        <div class="content_text_help_img">
+                        <div class="content_text_help_img content_text_help_img5">
                             <object type="image/svg+xml" data="src/img/percent.svg"></object>    
                         </div>
 
                     </div>
                     <p class="content_text_help_link" >Переходи в <a href="#section03">Курсы</a>, чтобы узнать более подробно детали обучения!</p>
+                </div>
+            </div>
+            <!-- FAQ -->
+            <div class="content_container _container" id="section00" data-aos="fade-up"
+            data-aos-anchor-placement="top-bottom" data-aos-duration="1000">
+                <h2 class="content_title">FAQ</h2>
+                <div class="content_text">
+                    <p>Нажмите на карточку, чтобы узнать ответ!</p>
+                    <div class="content_text_faq">
+                        <div class="parallelogram1">
+                            <p>Что такое лекция и семинар и в чём их отличие?</p>
+                        </div>
+                        <div class="parallelogram2">
+                            <p>Почему домашнее задание проверяется разными преподавателями?</p>
+                        </div>
+                        <div class="parallelogram3">
+                            <p>Как именно ученики общаются с семинаристом на занятиях?</p>
+                        </div>
+                        <div class="parallelogram4">
+                            <p>Как формируется рейтинг?</p>
+                        </div>
+                        <div class="parallelogram5">
+                            <p>На какую скидку можно рассчитывать?</p>
+                        </div>
+                    </div>
                 </div>
             </div>
         </section>
@@ -309,6 +330,7 @@
     <script src='https://github.com/simplefocus/FlowType.JS/blob/master/flowtype.js'></script>
     <script src="/src/js/script.js"></script>
     <script src="/src/js/nav.js"></script>
+    <script src="/src/js/hidetext.js"></script>
     <script src="/node_modules/viewport-checker/dist/viewportChecker.umd.js"></script>
     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
     <script>

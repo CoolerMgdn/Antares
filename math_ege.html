@@ -26,6 +26,12 @@
 <body>
     <!-- ШАПКА -->
     <nav class="main-nav">
+        <a class="menu-logo" href="index.html">
+            <svg width="50" height="50" viewBox="0 0 180 180" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <circle id="menu-logo-circle" cx="90" cy="90" r="90" fill="white"/>
+                <path id="menu-logo-A" d="M85.8252 22.1104C91.2451 22.1104 95.9326 23.7217 99.8877 26.9443C103.989 30.0205 107.505 34.1953 110.435 39.4688C113.511 44.7422 116.074 50.8213 118.125 57.7061C120.176 64.5908 121.86 71.8418 123.179 79.459C124.497 86.9297 125.522 94.5469 126.255 102.311C126.987 109.928 127.5 117.105 127.793 123.844C128.086 130.582 128.232 136.661 128.232 142.081C128.379 147.501 128.452 151.749 128.452 154.825H123.179L114.829 108.463C114.097 107.73 112.412 107.291 109.775 107.145C107.285 106.998 104.282 107.071 100.767 107.364C97.3975 107.657 93.6621 108.097 89.5605 108.683C85.6055 109.122 81.7969 109.488 78.1348 109.781C74.6191 109.928 71.3965 110.001 68.4668 110.001C65.5371 109.854 63.4131 109.342 62.0947 108.463V154.825H50.8887C50.8887 154.386 50.8887 153.58 50.8887 152.408C51.0352 151.09 51.1084 149.771 51.1084 148.453C51.1084 147.135 51.1816 145.89 51.3281 144.718C51.4746 143.546 51.5479 142.74 51.5479 142.301C52.4268 133.805 53.0859 125.235 53.5254 116.593C54.1113 107.804 54.7705 99.3076 55.5029 91.1045C56.2354 82.9014 57.1875 75.0645 58.3594 67.5938C59.6777 60.123 61.5088 53.3848 63.8525 47.3789C66.1963 41.2266 69.126 36.0264 72.6416 31.7783C76.1572 27.3838 80.5518 24.1611 85.8252 22.1104ZM89.3408 32.2178C85.5322 32.2178 82.3096 33.6094 79.6729 36.3926C77.1826 39.0293 75.1318 42.5449 73.5205 46.9395C71.9092 51.1875 70.6641 55.9482 69.7852 61.2217C68.9062 66.4951 68.3203 71.6953 68.0273 76.8223C67.7344 81.8027 67.5146 86.4902 67.3682 90.8848C67.3682 95.1328 67.3682 98.4287 67.3682 100.772C74.5459 100.772 81.8701 100.26 89.3408 99.2344C96.8115 98.0625 103.843 96.8906 110.435 95.7188C110.581 95.1328 110.654 94.1807 110.654 92.8623C110.801 91.5439 110.874 90.0791 110.874 88.4678C111.021 86.8564 111.094 85.3184 111.094 83.8535C111.24 82.3887 111.313 81.4365 111.313 80.9971C111.313 76.1631 111.021 71.5488 110.435 67.1543C109.995 62.7598 108.97 58.5117 107.358 54.4102C105.894 50.1621 103.696 46.207 100.767 42.5449C97.9834 38.8828 94.1748 35.4404 89.3408 32.2178Z" fill="#141414"/>
+            </svg>
+        </a>
         <div id="menu">
             <div id="menu-toggle">
                 <div id="menu-icon">
@@ -64,7 +70,7 @@
                 <!-- Учебная программа курса-->
                 <h2 class="content_title" id="section02">Учебная программа курса</h2>
                 <div class="content_text">
-                    <p>Учебная программа годового курса по математике: <a href="src/documents/pug.pdf">Математика ЕГЭ</a></p>
+                    <p>Учебная программа годового курса по математике: <a class="greenText" href="src/documents/Математика ЕГЭ.pdf">Математика ЕГЭ</a></p>
                 </div>
                 <!-- Рейтинг -->
                 <h2 class="content_title" id="section03">Рейтинг</h2>
@@ -75,8 +81,8 @@
                         Чем выше место в рейтинговой таблице-тем больше скидка. Всё элементарно! Лучшие из лучших могут рассчитывать на скидку до 15%!
                         <br><br>
                     </p>
-                    <p id="coursive">
-                        Система рейтинга будет настроена и внедрена в начале учебного года, а пока изучите курс получше или <a id="contacts" href="#section06">напишите нам.</a>
+                    <p class="coursive bold">
+                        Система рейтинга будет настроена и внедрена в начале учебного года, а пока изучите курс получше или <a class="greenText" id="contacts" href="#section06">напишите нам.</a>
                     </p> 
                 </div>
                 <!-- Учителя 
@@ -97,6 +103,8 @@
                 <!-- Тарифы -->
                 <h2 class="content_title" id="section05">Тарифы</h2>
                 <div class="content_text">
+                    
+                    <!--
                     <div class="content_text_images">
                         <img src="src/img/tarif1.jpg" class="minimized">
                         <img src="src/img/tarif2.jpg" class="minimized">
@@ -107,6 +115,191 @@
                         <a id="myBtn" class="content_text_buy_button">Купить
                             <div class="content_text_buy_rectangle"></div>
                         </a>
+                    </div>
+                    -->
+
+                    <div class="content_text_tariffs">
+
+                        <div class="content_text_tariffs_container">
+                            <div class="content_text_tariffs_container_tarif green">
+                                <div class="tarif_container">
+                                    <p class="tarif_container_title">Пуск!</p>
+                                    <p class="tarif_container_info">от&nbsp<span class="tarif_container_price1">699</span> руб / мес</p>
+                                    <p class="tarif_container_info">со второго месяца -&nbsp<span class="tarif_container_price2">2199</span>&nbspруб / мес</p>
+                                    <div class="tarif_container_line"></div>
+                                    <div class="tarif_container_flex">
+                                        <div class="tarif_container_flex_row">
+                                            <div class="tarif_container_flex_row_img">
+                                                <img src="src/img/check.svg" alt="" width="15px" height="15px">
+                                            </div>
+                                            <div class="tarif_container_flex_row_text">
+                                                Первый месяц цена в <span class="bold">3 раза</span> меньше!
+                                            </div>
+                                        </div>
+                                        <div class="tarif_container_flex_row">
+                                            <div class="tarif_container_flex_row_img">
+                                                <img src="src/img/check.svg" alt="" width="15px" height="15px">
+                                            </div>
+                                            <div class="tarif_container_flex_row_text">
+                                                <span class="bold">Наилучшее предложение</span> для того, чтобы узнать школу изнутри и выбрать свой дальнейший тариф
+                                            </div>
+                                        </div>
+                                        <div class="tarif_container_flex_row">
+                                            <div class="tarif_container_flex_row_img">
+                                                <img src="src/img/check.svg" alt="" width="15px" height="15px">
+                                            </div>
+                                            <div class="tarif_container_flex_row_text">
+                                                <span class="bold">Дополнительные</span> рейтинговые и индивидуальные <span class="bold">скидки</span>, начная со второго месяца
+                                            </div>
+                                        </div>
+                                        <div class="tarif_container_flex_row">
+                                            <div class="tarif_container_flex_row_img">
+                                                <img src="src/img/check.svg" alt="" width="15px" height="15px">
+                                            </div>
+                                            <div class="tarif_container_flex_row_text">
+                                                В тариф входит:
+                                            </div>
+                                        </div>
+                                        <div class="tarif_container_flex_row_points">
+                                            &#8226 1,5 ч/нед. лекций
+                                            <br>&#8226 3 ч/нед. семинаров
+                                            <br>&#8226 Проверка ДЗ семинаристом
+                                            <br>&#8226 Возможность получать ответы на вопросы по предмету в течение дня
+                                            <br>&#8226 Дополнительные материалы и тренажёры для подготовки
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="content_text_tariffs_container_tarif_buy">
+                                    <a id="myBtn" class="content_text_tariffs_container_tarif_buy_button green">Купить
+                                        <div class="content_text_tariffs_container_tarif_buy_rectangle"></div>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="content_text_tariffs_container_discount">
+                                <p>Выбор большинства!</p>
+                            </div>
+                        </div>
+
+                        <div class="content_text_tariffs_container">
+                            <div class="content_text_tariffs_container_tarif">
+                                <div class="tarif_container">
+                                    <p class="tarif_container_title">На три!</p>
+                                    <p class="tarif_container_info">от&nbsp<span class="tarif_container_price1">1933</span> руб / мес</p>
+                                    <p class="tarif_container_info"><span class="tarif_container_price2">5799</span>&nbspруб / 3 мес</p>
+                                    <div class="tarif_container_line"></div>
+                                    <div class="tarif_container_flex">
+                                        <div class="tarif_container_flex_row">
+                                            <div class="tarif_container_flex_row_img">
+                                                <img src="src/img/check.svg" alt="" width="15px" height="15px">
+                                            </div>
+                                            <div class="tarif_container_flex_row_text">
+                                                <span class="bold greenText">На 15%</span>  выгоднее, чем оплата помесячно!
+                                            </div>
+                                        </div>
+                                        <div class="tarif_container_flex_row">
+                                            <div class="tarif_container_flex_row_img">
+                                                <img src="src/img/check.svg" alt="" width="15px" height="15px">
+                                            </div>
+                                            <div class="tarif_container_flex_row_text">
+                                                <span class="bold greenText">Предложение №1</span>  для тех, кто решил выбрать нашу школу в качестве основной
+                                            </div>
+                                        </div>
+                                        <div class="tarif_container_flex_row">
+                                            <div class="tarif_container_flex_row_img">
+                                                <img src="src/img/check.svg" alt="" width="15px" height="15px">
+                                            </div>
+                                            <div class="tarif_container_flex_row_text">
+                                                <span class="bold greenText">Дополнительные</span> рейтинговые и индивидуальные <span class="bold greenText">скидки,</span> начная со второго месяца
+                                            </div>
+                                        </div>
+                                        <div class="tarif_container_flex_row">
+                                            <div class="tarif_container_flex_row_img">
+                                                <img src="src/img/check.svg" alt="" width="15px" height="15px">
+                                            </div>
+                                            <div class="tarif_container_flex_row_text">
+                                                В тариф входит:
+                                            </div>
+                                        </div>
+                                        <div class="tarif_container_flex_row_points">
+                                            &#8226 1,5 ч/нед. лекций
+                                            <br>&#8226 3 ч/нед. семинаров
+                                            <br>&#8226 Проверка ДЗ семинаристом
+                                            <br>&#8226 Возможность получать ответы на вопросы по предмету в течение дня
+                                            <br>&#8226 Дополнительные материалы и тренажёры для подготовки
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="content_text_tariffs_container_tarif_buy green">
+                                    <a id="myBtn1" class="content_text_tariffs_container_tarif_buy_button">Купить
+                                        <div class="content_text_tariffs_container_tarif_buy_rectangle"></div>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="content_text_tariffs_container_discountPercent">
+                                <p>-15%</p>
+                            </div>
+                        </div>
+
+                        <div class="content_text_tariffs_container">
+                            <div class="content_text_tariffs_container_tarif">
+                                <div class="tarif_container">
+                                    <p class="tarif_container_title">На год!</p>
+                                    <p class="tarif_container_info">от&nbsp<span class="tarif_container_price1">699</span> руб / мес</p>
+                                    <p class="tarif_container_info">со второго месяца -&nbsp<span class="tarif_container_price2">2199</span>&nbspруб / мес</p>
+                                    <div class="tarif_container_line"></div>
+                                    <div class="tarif_container_flex">
+                                        <div class="tarif_container_flex_row">
+                                            <div class="tarif_container_flex_row_img">
+                                                <img src="src/img/check.svg" alt="" width="15px" height="15px">
+                                            </div>
+                                            <div class="tarif_container_flex_row_text">
+                                                <span class="bold greenText">На 12%</span>  выгоднее, чем оплата помесячно!
+                                            </div>
+                                        </div>
+                                        <div class="tarif_container_flex_row">
+                                            <div class="tarif_container_flex_row_img">
+                                                <img src="src/img/check.svg" alt="" width="15px" height="15px">
+                                            </div>
+                                            <div class="tarif_container_flex_row_text">
+                                                <span class="bold greenText">Выбирают те,</span>   кто уверен не только в себе, но и в нас
+                                            </div>
+                                        </div>
+                                        <div class="tarif_container_flex_row">
+                                            <div class="tarif_container_flex_row_img">
+                                                <img src="src/img/check.svg" alt="" width="15px" height="15px">
+                                            </div>
+                                            <div class="tarif_container_flex_row_text">
+                                                <span class="bold greenText">Особая система поощрений </span>в зависимости от рейтинга, включая индвидуальные занятия с семинаристом
+                                            </div>
+                                        </div>
+                                        <div class="tarif_container_flex_row">
+                                            <div class="tarif_container_flex_row_img">
+                                                <img src="src/img/check.svg" alt="" width="15px" height="15px">
+                                            </div>
+                                            <div class="tarif_container_flex_row_text">
+                                                В тариф входит:
+                                            </div>
+                                        </div>
+                                        <div class="tarif_container_flex_row_points">
+                                            &#8226 1,5 ч/нед. лекций
+                                            <br>&#8226 3 ч/нед. семинаров
+                                            <br>&#8226 Проверка ДЗ семинаристом
+                                            <br>&#8226 Возможность получать ответы на вопросы по предмету в течение дня
+                                            <br>&#8226 Дополнительные материалы и тренажёры для подготовки
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="content_text_tariffs_container_tarif_buy green">
+                                    <a id="myBtn2" class="content_text_tariffs_container_tarif_buy_button">Купить
+                                        <div class="content_text_tariffs_container_tarif_buy_rectangle"></div>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="content_text_tariffs_container_discountPercent">
+                                <p>-12%</p>
+                            </div>
+                        </div>
+                        
                     </div>
 
                     <div id="myModal" class="modal">

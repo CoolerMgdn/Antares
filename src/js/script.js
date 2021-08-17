@@ -42,4 +42,21 @@ $( () => {
 			$('#menu-toggle').removeClass('closeMenu');
 		});
 	});
+
+	//Blur
+	$(".content_text_help_body1").hover(function () {
+		$('.content_text_help_img1').toggleClass("blur");
+	});
+	$(".content_text_help_body2").hover(function () {
+		$('.content_text_help_img2').toggleClass("blur");
+	});
+	$(".content_text_help_body3").hover(function () {
+		$('.content_text_help_img3').toggleClass("blur");
+	});
+	$(".content_text_help_body4").hover(function () {
+		$('.content_text_help_img4').toggleClass("blur");
+	});
+	$(".content_text_help_body5").hover(function () {
+		$('.content_text_help_img5').toggleClass("blur");
+	});
 });
