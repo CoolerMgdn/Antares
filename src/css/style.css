@@ -298,7 +298,8 @@ body {
 .content_courseName {
   font-size: 45px;
   margin: 90px 0px 30px 0px;
-  font-family: 'Roboto', sans-serif;
+  font-family: "Montserrat";
+  font-weight: bold;
   text-align: center;
 }
 .content_container {
@@ -324,10 +325,10 @@ body {
 }
 .video {
   border-radius: 25px;
-  margin-right: 20px;
   height: auto;
 }
 .content_text_video h1 {
+  margin-left: 20px;
   width: 80%;
 }
 
@@ -358,6 +359,7 @@ body {
     align-items: center;
     height: 50px;
 }
+
 .content_text_topic object {
   max-width: 4%;
   padding-right: 10px;
@@ -451,7 +453,7 @@ body {
   /*
   background: linear-gradient(180deg, #612B83 0%, #CD7BFF 0.01%, #E3B5FF 48.39%, #FFFFFF 98.82%);
   */
-  background: linear-gradient(90deg, #D592FF 0%, #CD4B52 100%);
+  background: linear-gradient(90deg, #A792FF 0%, #CD4B52 100%);
 }
 #physics_img {
   background-image: url(/src/img/physics.svg);
@@ -610,7 +612,7 @@ body {
 /* блюр картинок */
 .blur {
   filter: blur(0px) !important;
-  transition: all 200ms ease-in;
+  transition: all 200ms ease-in-out;
 }
 /* /блюр картинок */
 
@@ -622,7 +624,10 @@ body {
 }
 .content_text_help_img:hover {
   filter: blur(0px);
-  transition: all 100ms ease-in;
+  transition: all 100ms ease-in-out;
+}
+.content_text_help_img:not(:hover) {
+  transition: all 100ms ease-in-out;
 }
 .content_text_help_img object {
   width: 100%;
@@ -743,14 +748,14 @@ body {
 }
 .content_text_tariffs_container {
   width: 320px;
-  height: 700px;
+  height: 750px;
   margin-top: 40px;
 }
 .content_text_tariffs_container_discount {
   position:relative;
   display: flex;
   align-items: center;
-  top: -730px;
+  top: -780px;
   right: -150px;
   width: 135px;
   height: 75px;
@@ -771,7 +776,7 @@ body {
   position:relative;
   display: flex;
   align-items: center;
-  top: -730px;
+  top: -780px;
   right: -210px;
   width: 75px;
   height: 75px;
@@ -802,6 +807,15 @@ body {
   flex-direction: column;
   align-items: center;
 }
+.math_bg {
+  background-image: url(/src/img/math.svg);
+}
+.physics_bg {
+  background-image: url(/src/img/physics.svg);
+}
+.white_bg {
+  background-color: #fff !important;
+}
 .green {
   background: #5FF791 !important;
 }
@@ -821,10 +835,10 @@ body {
   color: #A63B41 !important;
 }
 .purple {
-  background: #D592FF !important;
+  background: #A792FF !important;
 }
 .purpleText {
-  color: #9049BB !important;
+  color: #BA48FF !important;
 }
 .white {
   background: #fff !important;
@@ -833,7 +847,7 @@ body {
   color: #fff !important;
 }
 .blackText {
-  color: #141414;
+  color: #343434;
 }
 .tarif_container {
   width: 250px;
@@ -1034,12 +1048,18 @@ body {
 }
 .content_text_tariffs_container_tarif_buy_button:hover .content_text_tariffs_container_tarif_buy_rectangle {
   transform: translateX(0px) translateY(0px);
-  transition: all 100ms ease-in;
+  transition: all 100ms ease-in-out;
+}
+.content_text_tariffs_container_tarif_buy_button:not(:hover) .content_text_tariffs_container_tarif_buy_rectangle {
+  transition: all 100ms ease-in-out;
 }
 .content_text_tariffs_container_tarif_buy_button:hover {
   color: #000 !important;
-  transition: all 100ms ease-in;
+  transition: all 100ms ease-in-out;
   background: #fff !important;
+}
+.content_text_tariffs_container_tarif_buy_button:not(:hover) {
+  transition: all 100ms ease-in-out;
 }
 .content_text_tariffs_container_tarif_buy_rectangle {
   position: absolute;
@@ -1151,8 +1171,14 @@ body {
   fill: #fff;
   transition: all 200ms ease-out;
 }
+.menu-logo:not(:hover) #menu-logo-A {
+  transition: all 200ms ease-out;
+}
 .menu-logo:hover #menu-logo-circle {
   fill: #141414;
+  transition: all 200ms ease-out;
+}
+.menu-logo:not(:hover) #menu-logo-circle {
   transition: all 200ms ease-out;
 }
   
@@ -1400,8 +1426,10 @@ body {
   }
   .video {
     height: 150px;
-    margin-right: 0px;
     margin-bottom: 20px;
+  }
+  .content_text_video h1 {
+    margin-left: 0;
   }
 
 }
@@ -1452,7 +1480,17 @@ body {
     .parallax_body object {
       left: 55%;
     }
+
+    .mobileShow {
+      display: block !important;
+    }
+    .mobileHide {
+      display: none !important;
+    }
   }
+.mobileShow {
+  display: none;
+}
   
   /*======================= /Мобильная версия =======================*/
 @media screen and (max-width: 1700px) {
